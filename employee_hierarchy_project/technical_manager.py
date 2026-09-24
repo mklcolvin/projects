@@ -12,5 +12,9 @@ class TechnicalManager(Manager, Engineer):
         # TODO: Initialize the Person part directly using Person.__init__()
         # TODO: Set all other attributes directly (employee_id, salary, department, programming_language)
         Person.__init__(self, name, age)
-        Manager.__init__(self, name, age, employee_id, salary, department)
-        Engineer.__init__(self, name, age, employee_id, salary, programming_language)
+        self.employee_id = employee_id
+        self.salary = salary
+        self.department = department
+        self.programming_language = programming_language
+#        Manager.__init__(self, name, age, employee_id, salary, department)
+#        Engineer.__init__(self, name, age, employee_id, salary, programming_language)
